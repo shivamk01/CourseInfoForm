@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+ <style>
+  
+            body{
+
+
+             background: lightgray;
+             margin: 0 auto;
+             font-family: arial;
+      
+
+            }
+
+            h1{
+
+             color: black;
+             text-align: center;
+            }
+      label{
+
+       color: #777;
+       width: 10%;
+       display: inline-block;
+       cursor: pointer;
+       color: black;
+       display: block;
+  
+       margin: 3px;
+        
+
+      }
+
+      #container{
+
+
+       padding: 10px;
+       width: 40%;
+       margin: 0 auto;
+       margin-top: 1%;
+       margin-bottom: 1%;
+       background-color: #66CCCC;
+       border-radius: 14px 14px 14px 14px;
+       border-color:green	;
+      }
+
+   .userinput{
+
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border-color: solid red;
+      
+
+   
+
+   }
+
+
+  ::-webkit-input-placeholder {
+     color: grey;
+      font-weight: bold;
+  }
+  
+
+      input {
+    width: 400px;
+    height: 25px;
+    border-color:green;
+    border-width:2px;
+    font-weight: bold;
+  }
+
+        label{
+    width: 250px;
+    height: 25px;
+    font-weight: bold;
+    border-color:green;
+    border-width:2px;
+  }
+
+   textarea {
+    width: 800px;
+    height: 50px;
+    border-color:green;
+    border-width:2px;
+  }
+   label{
+
+    color: black;
+    font-size: 14px;
+    float: none; 
+    display: inline-block;
+    vertical-align: middle;
+    border-color:green;
+    border-style: solid;
+    text-align: right;
+    padding-left: 50px;
+    border-width:2px;
+   }
+   textarea{
+ color: black;
+    font-size: 14px;
+    }
+
+
+   select{
+
+    color: black;
+     width: 400px;
+    height: 30px;
+    font-weight: bold;
+    border-color:green;
+    border-width:10px;
+   }
+ 
+   .sampleBtn{
+     
+       background-color: darkgreen;
+       width: 60%;
+       height: 35px;
+       font-size: 16px;
+       color:white;
+
+   }
+   .sampleBtn:hover{
+
+         color: white;
+         background-color: darkgreen;
+         cursor: pointer;
+   }
+ </style>
+
+</head>
+
+<body>
+<div id="container">
+ <h1> Course Information </h1>
+ <form method="GET" action="register.jsp">
+ 
+  <div class="userinput" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+   <label> Name</label>
+   <input type="text" name="Name" value=""  style="border:2px solid green"  autofocus required/>
+  </div>
+    
+  <div class="userinput" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+   <label> Email </label>   
+   <input type="text" name="email" value="" style="border:2px solid green" required/>
+  </div>
+
+  <div class="userinput" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+   <label>Gender </label>
+   <select name="gender" style="border:2px solid green" required>
+    <option value="1">Male</option>
+    <option value="2">Female</option>
+    <option value="3">Others</option>
+    <option value="4">Prefer Not To Say</option>
+   </select>
+  </div>
+  
+  <div class="userinput" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+   <label> Date of Birth </label>  
+   <input type="text" name="birthdate" value="" placeholder="mm/dd/yyyy" required style="border:2px solid green" autocomplete="off"
+   pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" required/> 
+  </div>
+
+  <div class="userinput" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+   <label> Course Name </label>   
+   <input type="text" name="coursename" value="" style="border:2px solid green" required/>
+  </div>
+  
+
+  <div class="userinput" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+   <label> Course Code </label>   
+   <input type="text" name="coursecode" value="" required inputmode="number" style="border:2px solid green" autocomplete="off" pattern="{CSE}[0-9][0-9][0-9][0-9]" required/>
+  </div>
+
+  <div class="userinput" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+   <label>Slot </label>
+   <select name="slot" style="border:2px solid green" required>
+    <option value="1">L23+24</option>
+    <option value="2">L45+46</option>
+    <option value="3">L47+48</option>
+    <option value="4">L57+58</option>
+   </select>
+  </div>
+
+   <div class="userinput" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+   <label> Mobile Number</label>   
+  <input type="text" id="mobile" name="email" required inputmode="number" autocomplete="off" pattern="[789][0-9]{9}" minlength="10" maxlength="10" style="border:2px solid green" required></br></br>
+ </div>
+  
+  
+  
+  <div class="userinput" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+   <textarea name="comments" palceholder="Search here" rows="7" cols="40" placeholder="Remarks" width:"500px"/></textarea>
+  </div>
+  
+  
+  <div style="text-align:center">
+   <input type="submit" class="sampleBtn" />   
+  </div>
+  
+ </form>
+ 
+ </div>
+ 
+</body>
+
+</html>
