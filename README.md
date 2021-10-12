@@ -1,1 +1,2 @@
 # CourseInfoForm
+# add licence copyright
